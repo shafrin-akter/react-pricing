@@ -1,11 +1,9 @@
-import { useState } from "react";
-import "./App.css";
+import Navber from "./components/Navber/Navber";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <Navber></Navber>
       <h1>Hello React Bashi</h1>
     </>
   );
