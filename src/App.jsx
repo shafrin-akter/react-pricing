@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <Navber></Navber>
-      <h1>Hello React Bashi</h1>
     </>
   );
 }
