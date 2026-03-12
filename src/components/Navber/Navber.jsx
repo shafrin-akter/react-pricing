@@ -42,8 +42,11 @@ const Navber = () => {
 
   const [togle, setTogle] = useState(false);
   return (
-    <nav className="flex justify-between mx-10 mt-4">
-      <div className="flex gap-2 items-center" onClick={() => setTogle(!togle)}>
+    <nav className="flex justify-between items-center mx-10 mt-4">
+      <div
+        className="flex justify-between gap-2 items-center"
+        onClick={() => setTogle(!togle)}
+      >
         {togle ? (
           <IoIosClose className="lg:hidden"></IoIosClose>
         ) : (
@@ -53,11 +56,13 @@ const Navber = () => {
         <ul className={`lg:hidden ${togle ? "top-15" : "-top-40"} absolute `}>
           {links}
         </ul>
-
-        <h2>My Navber</h2>
       </div>
+
+      <h2 className="text-center">My Navber</h2>
+      <button className="btn  lg:hidden text-center">Sign In</button>
+
       <ul className="lg:flex hidden text-end">{links}</ul>
-      <button className="btn">Sign In</button>
+      <button className="btn hidden lg:flex text-center">Sign In</button>
     </nav>
   );
 };
